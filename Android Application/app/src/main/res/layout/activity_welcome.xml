@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.castle.croftcappture.Welcome"
+    android:background="@drawable/croftbackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CroftCappture"
+        android:id="@+id/textView2"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#006400"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="168dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/welcome_button"
+        android:layout_marginTop="98dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/abc_search_url_text"/>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/uofe_logo"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="147dp"
+        android:layout_marginBottom="50dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                tools:context=".MainActivity">
+
+    <fragment
+        android:name="uk.co.ordnancesurvey.android.maps.MapFragment"
+        android:id="@+id/os_map_fragment"
+        android:label="@string/app_name"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout="@layout/abc_screen_simple"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Digitise"
+            android:id="@+id/button_digitise"
+            android:backgroundTint="@color/abc_search_url_text"
+            android:layout_alignTop="@+id/image_button_camera"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complete"
+            android:id="@+id/button_finish"
+            android:visibility="invisible"
+            android:layout_alignBottom="@+id/imagebutton_mylocation"
+            android:layout_marginLeft="250dp"/>
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imagebutton_mylocation"
+            android:src="@android:drawable/ic_menu_mylocation"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ToolbarTheme"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gps_on"
+            android:layout_alignBottom="@+id/toolbar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End"
+            android:id="@+id/button_submit"
+            android:visibility="invisible"
+            android:layout_alignTop="@+id/button_digitise"
+            android:layout_marginLeft="295dp"
+            android:backgroundTint="@android:color/holo_red_light"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_button_camera"
+        android:src="@android:drawable/ic_menu_camera"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imagebutton_mylocation"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/describe"
+        android:src="@android:drawable/ic_menu_edit"
+        android:layout_alignTop="@+id/image_button_camera"
+        android:layout_toEndOf="@+id/image_button_camera"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/help"
+        android:layout_below="@+id/imagebutton_mylocation"
+        android:layout_alignStart="@+id/imagebutton_mylocation"
+        android:src="@android:drawable/ic_menu_help"/>
+
+</RelativeLayout>

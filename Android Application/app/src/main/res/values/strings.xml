@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">CroftCappture</string>
+    <string name="action_settings">Settings</string>
+    <string name="enable_GPS">Please enable GPS.</string>
+    <string name="look_for_location">Location:\nSearching...           </string>
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="university">The University of Edinburgh</string>
+    <string-array name="map_array">
+        <item>OS Map</item>
+        <item>Satellite</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+</resources>
